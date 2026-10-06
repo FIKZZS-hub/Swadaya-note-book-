@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Swadaya Notebook Store - Laptop untuk gaming, harian, dan editing</title>
+<meta name="description" content="Swadaya Notebook Store menjual laptop untuk gaming, kerja harian, dan editing. Lihat katalog, spesifikasi, dan hubungi kami.">
+<meta name="theme-color" content="#0E1726">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="id_ID">
+<meta property="og:title" content="Swadaya Notebook Store">
+<meta property="og:description" content="Laptop untuk gaming, harian, dan editing. Tersedia juga servis hardware, software, dan sparepart laptop.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230E1726'/%3E%3Crect x='7' y='9' width='18' height='12' rx='2' fill='none' stroke='%23FFD60A' stroke-width='2'/%3E%3Crect x='4.5' y='22.5' width='23' height='2.5' rx='1.25' fill='%23FFD60A'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ComputerStore","name":"Swadaya Notebook Store","email":"dedycipunjur@gmail.com","telephone":["+6281808090464","+628987370165"],"hasMap":"https://maps.app.goo.gl/JW3Zf19A5umssGeo7"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F5F7FB;
+    --card: #FFFFFF;
+    --ink: #0E1726;
+    --muted: #566178;
+    --line: #D8DEEA;
+    --cobalt: #1F4FFF;
+    --signal: #FFD60A;
+    --gaming: #6B3BFF;
+    --gaming-tint: #ECE6FF;
+    --harian: #1F4FFF;
+    --harian-tint: #E3EAFF;
+    --editing: #E8541F;
+    --editing-tint: #FFE8DE;
+    --display: "Bricolage Grotesque", "Trebuchet MS", "Segoe UI", sans-serif;
+    --body: "Instrument Sans", "Segoe UI", Roboto, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--cobalt); outline-offset: 3px; border-radius: 6px; }
+  .wrap { width: min(1120px, 100% - 40px); margin-inline: auto; }
+
+  /* Header */
+  .site-header {
+    position: sticky; top: 0; z-index: 20;
+    background: rgba(245, 247, 251, .92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; }
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-family: var(--display); font-weight: 800; font-size: 19px; letter-spacing: -.01em; }
+  .brand-mark { width: 30px; height: 30px; flex: none; }
+  .nav { display: flex; align-items: center; gap: 22px; font-weight: 500; font-size: 15.5px; }
+  .nav a { text-decoration: none; color: var(--muted); }
+  .nav a:hover { color: var(--ink); }
+  .nav .nav-cta { color: var(--ink); background: var(--signal); padding: 8px 16px; border-radius: 999px; font-weight: 600; }
+  .nav .nav-cta:hover { background: #ffe14d; }
+  @media (max-width: 640px) { .nav a:not(.nav-cta) { display: none; } .brand { font-size: 17px; } }
+
+  /* Hero */
+  .hero { padding: 56px 0 40px; }
+  .hero .wrap { display: grid; grid-template-columns: 1.05fr .95fr; gap: 40px; align-items: center; }
+  .hero h1 {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: clamp(38px, 6vw, 68px);
+    line-height: 1.02;
+    letter-spacing: -.03em;
+    margin: 0 0 18px;
+    text-wrap: balance;
+  }
+  .hero p.lead { font-size: 19px; color: var(--muted); max-width: 46ch; margin: 0 0 28px; }
+  .need-picker { display: grid; gap: 10px; max-width: 480px; }
+  .need-btn {
+    display: flex; align-items: center; gap: 14px;
+    width: 100%; text-align: left;
+    background: var(--card); border: 1.5px solid var(--line); border-radius: 14px;
+    padding: 14px 16px; cursor: pointer; font: inherit; color: inherit;
+    transition: border-color .15s, transform .15s, box-shadow .15s;
+  }
+  .need-btn:hover, .need-btn:focus-visible, .need-btn.is-active { border-color: var(--c); box-shadow: 0 0 0 3px var(--t); }
+  .need-btn .dot { width: 14px; height: 14px; border-radius: 50%; background: var(--c); flex: none; }
+  .need-btn strong { display: block; font-family: var(--display); font-size: 19px; line-height: 1.2; }
+  .need-btn span.sub { display: block; color: var(--muted); font-size: 15px; }
+  .need-btn[data-need="gaming"] { --c: var(--gaming); --t: var(--gaming-tint); }
+  .need-btn[data-need="harian"] { --c: var(--harian); --t: var(--harian-tint); }
+  .need-btn[data-need="editing"] { --c: var(--editing); --t: var(--editing-tint); }
+  .hero-art { position: relative; }
+  .hero-art svg { width: 100%; height: auto; display: block; filter: drop-shadow(0 24px 28px rgba(14,23,38,.18)); }
+  .hero-art .screen { opacity: 0; transition: opacity .35s ease; }
+  .hero-art .screen.on { opacity: 1; }
+  .hero-caption { margin: 10px 0 0; text-align: center; color: var(--muted); font-size: 15px; min-height: 1.6em; }
+  @media (max-width: 860px) {
+    .hero { padding-top: 32px; }
+    .hero .wrap { grid-template-columns: 1fr; }
+    .hero-art { order: -1; max-width: 460px; margin-inline: auto; width: 100%; }
+  }
+
+  /* Sections */
+  section.block { padding: 56px 0; }
+  .section-head { margin-bottom: 26px; }
+  .section-head h2 { font-family: var(--display); font-weight: 800; font-size: clamp(28px, 4vw, 40px); letter-spacing: -.02em; line-height: 1.1; margin: 0 0 8px; }
+  .section-head p { margin: 0; color: var(--muted); max-width: 56ch; }
+
+  /* Filters */
+  .filters { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 22px; }
+  .chip {
+    font: inherit; font-weight: 500; font-size: 15.5px;
+    padding: 8px 16px; border-radius: 999px; cursor: pointer;
+    background: var(--card); border: 1.5px solid var(--line); color: var(--ink);
+  }
+  .chip:hover { border-color: var(--ink); }
+  .chip[aria-pressed="true"] { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .count { margin-left: auto; color: var(--muted); font-size: 15px; }
+  @media (max-width: 560px) { .count { width: 100%; margin-left: 0; } }
+
+  /* Catalog */
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(255px, 1fr)); gap: 18px; }
+  .card {
+    display: flex; flex-direction: column; text-align: left;
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 0; overflow: hidden; cursor: pointer; font: inherit; color: inherit;
+    transition: border-color .15s, box-shadow .15s;
+  }
+  .card:hover, .card:focus-visible { border-color: var(--ink); box-shadow: 0 8px 22px rgba(14,23,38,.1); }
+  .card-art { background: #EBEFF7; padding: 18px 22px 12px; }
+  .card-art svg { width: 100%; height: auto; display: block; }
+  .card-body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+  .card-brand { color: var(--muted); font-size: 14px; }
+  .card-name { font-family: var(--display); font-weight: 800; font-size: 20px; line-height: 1.2; letter-spacing: -.01em; }
+  .card-spec { color: var(--muted); font-size: 14.5px; line-height: 1.45; }
+  .card-foot { margin-top: auto; padding-top: 10px; display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+  .price { font-weight: 600; font-size: 17px; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .tag { font-size: 13px; font-weight: 600; padding: 2px 10px; border-radius: 999px; }
+  .tag.gaming { background: var(--gaming-tint); color: #4A1FD0; }
+  .tag.harian { background: var(--harian-tint); color: #123BC8; }
+  .tag.editing { background: var(--editing-tint); color: #A53A10; }
+  .empty { grid-column: 1 / -1; padding: 40px; text-align: center; color: var(--muted); background: var(--card); border: 1px dashed var(--line); border-radius: 12px; }
+
+  /* Detail dialog */
+  dialog.detail {
+    width: min(760px, 100% - 24px); max-height: calc(100vh - 32px);
+    padding: 0; border: none; border-radius: 16px; background: var(--card); color: var(--ink);
+    box-shadow: 0 30px 80px rgba(14,23,38,.35); overflow: auto;
+  }
+  dialog.detail::backdrop { background: rgba(14, 23, 38, .55); }
+  dialog.detail[open] { animation: pop .2s ease-out; }
+  @keyframes pop { from { opacity: 0; transform: translateY(12px) scale(.98); } to { opacity: 1; transform: none; } }
+  .detail-top { display: grid; grid-template-columns: 1fr 1.1fr; gap: 22px; padding: 26px; }
+  .detail-art { background: #EBEFF7; border-radius: 12px; padding: 22px 20px 14px; align-self: start; }
+  .detail-art svg { width: 100%; height: auto; display: block; }
+  .detail h3 { font-family: var(--display); font-weight: 800; font-size: 28px; line-height: 1.1; letter-spacing: -.02em; margin: 0 0 4px; }
+  .detail .brand-line { color: var(--muted); margin: 0 0 10px; font-size: 15px; }
+  .detail .summary { margin: 12px 0 0; color: var(--muted); font-size: 16px; }
+  .detail .price-big { font-family: var(--display); font-weight: 800; font-size: 26px; margin: 12px 0 0; }
+  .close-btn {
+    position: absolute; top: 12px; right: 12px; width: 40px; height: 40px;
+    border-radius: 50%; border: 1px solid var(--line); background: var(--card);
+    font-size: 22px; line-height: 1; cursor: pointer; color: var(--ink);
+  }
+  .close-btn:hover { background: var(--paper); }
+  .detail-section { padding: 0 26px 24px; }
+  .detail-section h4 { font-family: var(--display); font-size: 19px; margin: 0 0 12px; }
+  table.specs { width: 100%; border-collapse: collapse; font-size: 15.5px; }
+  table.specs th, table.specs td { text-align: left; padding: 10px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  table.specs th { width: 36%; font-weight: 500; color: var(--muted); padding-right: 12px; }
+  .needs { display: grid; gap: 12px; }
+  .need-row { display: grid; grid-template-columns: 96px 1fr; gap: 6px 14px; align-items: start; }
+  .need-row .label { font-weight: 600; display: flex; align-items: center; gap: 8px; }
+  .need-row .label i { width: 10px; height: 10px; border-radius: 50%; background: var(--c); display: inline-block; }
+  .need-row .meter { display: flex; gap: 4px; margin-bottom: 4px; }
+  .need-row .meter b { height: 8px; flex: 1; border-radius: 4px; background: var(--line); max-width: 38px; }
+  .need-row .meter b.fill { background: var(--c); }
+  .need-row .verdict { font-weight: 600; font-size: 15px; }
+  .need-row .desc { color: var(--muted); font-size: 14.5px; line-height: 1.45; }
+  .need-row[data-need="gaming"] { --c: var(--gaming); }
+  .need-row[data-need="harian"] { --c: var(--harian); }
+  .need-row[data-need="editing"] { --c: var(--editing); }
+  .detail-actions { display: flex; flex-wrap: wrap; gap: 10px; padding: 0 26px 26px; }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    font: inherit; font-weight: 600; font-size: 16px; text-decoration: none; cursor: pointer;
+    padding: 12px 22px; border-radius: 999px; border: 1.5px solid var(--ink);
+    background: var(--ink); color: #fff;
+  }
+  .btn:hover { background: #1f2d45; }
+  .btn.alt { background: transparent; color: var(--ink); }
+  .btn.alt:hover { background: var(--paper); }
+  .btn.signal { background: var(--signal); color: var(--ink); border-color: var(--signal); }
+  .btn.signal:hover { background: #ffe14d; border-color: #ffe14d; }
+  @media (max-width: 640px) {
+    .detail-top { grid-template-columns: 1fr; padding: 20px; padding-top: 56px; }
+    .detail-section { padding: 0 20px 20px; }
+    .detail-actions { padding: 0 20px 22px; }
+    .need-row { grid-template-columns: 1fr; }
+  }
+
+  /* Lokasi & kontak */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 800px) { .two-col { grid-template-columns: 1fr; } }
+  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 28px; }
+  .panel h3 { font-family: var(--display); font-weight: 800; font-size: 24px; letter-spacing: -.01em; margin: 0 0 8px; line-height: 1.15; }
+  .panel p { margin: 0 0 18px; color: var(--muted); }
+  .panel p.hours { color: var(--ink); line-height: 1.5; }
+  .panel.dark { background: var(--ink); border-color: var(--ink); color: #fff; }
+  .panel.dark p { color: #B7C0D3; }
+  .email-link { display: inline-block; font-family: var(--display); font-weight: 800; font-size: clamp(18px, 3vw, 22px); word-break: break-all; margin-bottom: 18px; color: var(--signal); text-decoration: underline; text-underline-offset: 4px; }
+  .admins { list-style: none; margin: 0 0 20px; padding: 0; }
+  .admins li { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px; padding: 12px 0; border-top: 1px solid rgba(255,255,255,.18); }
+  .admins li:last-child { border-bottom: 1px solid rgba(255,255,255,.18); }
+  .admin-name { width: 100%; color: #B7C0D3; font-size: 14px; }
+  .admins a.num { font-family: var(--display); font-weight: 800; font-size: clamp(19px, 3vw, 22px); color: var(--signal); text-decoration: none; }
+  .admins a.num:hover { text-decoration: underline; text-underline-offset: 4px; }
+  .btn.btn-sm { padding: 6px 16px; font-size: 14.5px; margin-left: auto; }
+  .svc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+  .svc ul { margin: 0; padding-left: 20px; color: var(--ink); }
+  .svc li { margin-bottom: 6px; }
+  .svc p { margin-bottom: 14px; }
+  .svc-cta { margin: 24px 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; color: var(--muted); }
+  .card-art img.photo, .detail-art img.photo { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; mix-blend-mode: multiply; }
+  .btn-row { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn.alt-light { background: transparent; color: #fff; border-color: #fff; }
+  .btn.alt-light:hover { background: rgba(255,255,255,.12); }
+  form.contact { display: grid; gap: 12px; }
+  form.contact label { font-weight: 500; font-size: 15px; display: grid; gap: 6px; }
+  form.contact input, form.contact textarea {
+    font: inherit; padding: 11px 14px; border-radius: 10px; border: 1.5px solid var(--line);
+    background: var(--paper); color: var(--ink); width: 100%;
+  }
+  form.contact textarea { min-height: 110px; resize: vertical; }
+  form.contact input:focus, form.contact textarea:focus { outline: none; border-color: var(--cobalt); box-shadow: 0 0 0 3px var(--harian-tint); }
+  .form-note { font-size: 14px; color: var(--muted); margin: 0; }
+
+  footer.site-footer { border-top: 1px solid var(--line); padding: 28px 0 88px; color: var(--muted); font-size: 15px; }
+  footer.site-footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; }
+
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .tools { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 22px; }
+  .tools input, .tools select {
+    font: inherit; font-size: 16px; padding: 10px 14px; border-radius: 10px;
+    border: 1.5px solid var(--line); background: var(--card); color: var(--ink);
+  }
+  .tools input { flex: 1 1 240px; min-width: 0; }
+  .tools select { flex: 0 1 200px; }
+  .tools input:focus, .tools select:focus { outline: none; border-color: var(--cobalt); box-shadow: 0 0 0 3px var(--harian-tint); }
+  .cond { display: inline-block; margin-left: 8px; font-size: 12.5px; font-weight: 600; padding: 1px 8px; border-radius: 999px; background: var(--signal); color: var(--ink); }
+  .empty .chip { margin-top: 14px; }
+
+  .faq { display: grid; gap: 10px; max-width: 760px; }
+  .faq details { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 0 18px; }
+  .faq summary { cursor: pointer; padding: 16px 0; font-weight: 600; font-family: var(--display); font-size: 18px; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: "+"; font-size: 24px; line-height: 1; color: var(--muted); flex: none; }
+  .faq details[open] summary::after { content: "\2212"; }
+  .faq details p { margin: 0 0 16px; color: var(--muted); }
+  .faq details p a { color: var(--cobalt); }
+
+  .wa-fab { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 18; display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
+  .wa-fab-btn { display: inline-flex; align-items: center; gap: 8px; font: inherit; font-weight: 600; font-size: 16px; color: #fff; background: #0F8A47; border: none; border-radius: 999px; padding: 12px 20px; cursor: pointer; box-shadow: 0 8px 20px rgba(14,23,38,.28); }
+  .wa-fab-btn:hover { background: #0c723b; }
+  .wa-menu { display: none; flex-direction: column; gap: 4px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 8px; box-shadow: 0 12px 28px rgba(14,23,38,.22); }
+  .wa-menu.open { display: flex; }
+  .wa-menu a { text-decoration: none; padding: 10px 14px; border-radius: 8px; font-weight: 600; white-space: nowrap; }
+  .wa-menu a:hover { background: var(--paper); }
+  .wa-menu small { display: block; color: var(--muted); font-weight: 400; font-size: 14px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Swadaya Notebook Store, ke atas">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="#0E1726"/>
+        <rect x="7" y="9" width="18" height="12" rx="2" fill="none" stroke="#FFD60A" stroke-width="2"/>
+        <rect x="4.5" y="22.5" width="23" height="2.5" rx="1.25" fill="#FFD60A"/>
+      </svg>
+      Swadaya Notebook Store
+    </a>
+    <nav class="nav" aria-label="Menu utama">
+      <a href="#katalog">Katalog</a>
+      <a href="#layanan">Servis</a>
+      <a href="#lokasi">Lokasi</a>
+      <a class="nav-cta" href="#kontak">Hubungi kami</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Laptop yang pas, tanpa bingung memilih.</h1>
+        <p class="lead">Swadaya Notebook Store menyediakan laptop untuk main game, kerja dan sekolah sehari-hari, sampai edit video. Pilih kebutuhanmu, kami tunjukkan laptop yang cocok.</p>
+        <div class="need-picker" role="group" aria-label="Pilih kebutuhan laptop">
+          <button class="need-btn" data-need="gaming" type="button">
+            <span class="dot"></span>
+            <span><strong>Gaming</strong><span class="sub">Game berat dengan layar halus 144Hz</span></span>
+          </button>
+          <button class="need-btn" data-need="harian" type="button">
+            <span class="dot"></span>
+            <span><strong>Harian</strong><span class="sub">Sekolah, kuliah, dan pekerjaan kantor</span></span>
+          </button>
+          <button class="need-btn" data-need="editing" type="button">
+            <span class="dot"></span>
+            <span><strong>Editing</strong><span class="sub">Video, foto, dan desain grafis</span></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 520 340" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="scr"><rect x="86" y="36" width="348" height="204" rx="6"/></clipPath>
+            <linearGradient id="gGame" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B1147"/><stop offset="1" stop-color="#6B3BFF"/></linearGradient>
+            <linearGradient id="gSun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFB27A"/><stop offset="1" stop-color="#E8541F"/></linearGradient>
+          </defs>
+          <!-- body -->
+          <rect x="70" y="20" width="380" height="236" rx="16" fill="#0E1726"/>
+          <rect x="86" y="36" width="348" height="204" rx="6" fill="#fff"/>
+          <g clip-path="url(#scr)">
+            <!-- gaming screen -->
+            <g class="screen" data-screen="gaming">
+              <rect x="86" y="36" width="348" height="204" fill="url(#gGame)"/>
+              <path d="M86 200 L180 150 L240 175 L330 120 L434 190 L434 240 L86 240Z" fill="#2B1A78" opacity=".9"/>
+              <circle cx="260" cy="130" r="26" fill="none" stroke="#FFD60A" stroke-width="3"/>
+              <path d="M260 92v22M260 146v22M222 130h22M276 130h22" stroke="#FFD60A" stroke-width="3" stroke-linecap="round"/>
+              <rect x="104" y="52" width="110" height="10" rx="5" fill="#ffffff" opacity=".25"/>
+              <rect x="104" y="52" width="76" height="10" rx="5" fill="#3CFF9A"/>
+              <rect x="352" y="50" width="66" height="22" rx="6" fill="#0E1726" opacity=".7"/>
+              <text x="385" y="66" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#FFD60A">144 FPS</text>
+              <path d="M110 214l40-14M110 224l60-20" stroke="#fff" stroke-width="2" opacity=".35" stroke-linecap="round"/>
+            </g>
+            <!-- harian screen -->
+            <g class="screen" data-screen="harian">
+              <rect x="86" y="36" width="348" height="204" fill="#F5F7FB"/>
+              <rect x="86" y="36" width="348" height="26" fill="#DDE4F3"/>
+              <rect x="96" y="44" width="70" height="18" rx="5" fill="#fff"/>
+              <rect x="172" y="48" width="52" height="14" rx="5" fill="#C5D0EA"/>
+              <rect x="108" y="78" width="200" height="150" rx="6" fill="#fff"/>
+              <rect x="122" y="92" width="110" height="10" rx="5" fill="#1F4FFF"/>
+              <rect x="122" y="116" width="170" height="6" rx="3" fill="#C9D1DF"/>
+              <rect x="122" y="130" width="160" height="6" rx="3" fill="#C9D1DF"/>
+              <rect x="122" y="144" width="172" height="6" rx="3" fill="#C9D1DF"/>
+              <rect x="122" y="158" width="120" height="6" rx="3" fill="#C9D1DF"/>
+              <rect x="122" y="180" width="170" height="36" rx="6" fill="#E3EAFF"/>
+              <rect x="322" y="78" width="98" height="64" rx="6" fill="#fff"/>
+              <rect x="334" y="90" width="48" height="8" rx="4" fill="#FFD60A"/>
+              <rect x="334" y="108" width="70" height="6" rx="3" fill="#C9D1DF"/>
+              <rect x="334" y="120" width="56" height="6" rx="3" fill="#C9D1DF"/>
+              <rect x="322" y="152" width="98" height="76" rx="6" fill="#1F4FFF"/>
+              <rect x="334" y="166" width="60" height="8" rx="4" fill="#fff" opacity=".9"/>
+              <rect x="334" y="184" width="74" height="6" rx="3" fill="#fff" opacity=".5"/>
+              <rect x="334" y="196" width="48" height="6" rx="3" fill="#fff" opacity=".5"/>
+            </g>
+            <!-- editing screen -->
+            <g class="screen" data-screen="editing">
+              <rect x="86" y="36" width="348" height="204" fill="#1B2230"/>
+              <rect x="104" y="48" width="200" height="104" rx="6" fill="url(#gSun)"/>
+              <circle cx="204" cy="112" r="22" fill="#FFE9A8"/>
+              <path d="M104 152 L150 112 L190 140 L240 100 L304 152Z" fill="#7A2E12" opacity=".75"/>
+              <rect x="318" y="48" width="100" height="104" rx="6" fill="#262F42"/>
+              <rect x="328" y="62" width="80" height="6" rx="3" fill="#8A97B3"/>
+              <rect x="328" y="78" width="56" height="6" rx="3" fill="#8A97B3"/>
+              <rect x="328" y="100" width="80" height="6" rx="3" fill="#E8541F"/>
+              <rect x="328" y="116" width="64" height="6" rx="3" fill="#8A97B3"/>
+              <rect x="104" y="164" width="314" height="62" rx="6" fill="#141A26"/>
+              <rect x="110" y="172" width="96" height="16" rx="4" fill="#E8541F"/>
+              <rect x="210" y="172" width="70" height="16" rx="4" fill="#FFD60A"/>
+              <rect x="284" y="172" width="126" height="16" rx="4" fill="#6B3BFF"/>
+              <rect x="110" y="194" width="140" height="14" rx="4" fill="#1F4FFF"/>
+              <rect x="254" y="194" width="100" height="14" rx="4" fill="#3CFF9A"/>
+              <rect x="226" y="166" width="3" height="58" fill="#fff"/>
+            </g>
+          </g>
+          <!-- base -->
+          <path d="M28 258h464l-14 6a28 28 0 0 1-12 2.5H54a28 28 0 0 1-12-2.5z" fill="#C9D1DF"/>
+          <rect x="210" y="258" width="100" height="6" rx="3" fill="#A9B3C6"/>
+        </svg>
+        <p class="hero-caption" id="heroCaption">Pilih kebutuhan untuk melihat contohnya</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="katalog" aria-labelledby="katalogTitle">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="katalogTitle">Katalog laptop</h2>
+        <p>Klik salah satu laptop untuk melihat spesifikasi lengkap dan kebutuhan yang cocok.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter berdasarkan kebutuhan">
+        <button class="chip" type="button" data-filter="semua" aria-pressed="true">Semua</button>
+        <button class="chip" type="button" data-filter="gaming" aria-pressed="false">Gaming</button>
+        <button class="chip" type="button" data-filter="harian" aria-pressed="false">Harian</button>
+        <button class="chip" type="button" data-filter="editing" aria-pressed="false">Editing</button>
+        <span class="count" id="count" aria-live="polite"></span>
+      </div>
+      <div class="tools">
+        <label class="sr-only" for="q">Cari laptop</label>
+        <input type="search" id="q" placeholder="Cari nama atau merek, misalnya ASUS" autocomplete="off">
+        <label class="sr-only" for="budget">Budget</label>
+        <select id="budget">
+          <option value="semua">Semua budget</option>
+          <option value="0-6">Di bawah Rp 6 juta</option>
+          <option value="6-10">Rp 6 sampai 10 juta</option>
+          <option value="10-15">Rp 10 sampai 15 juta</option>
+          <option value="15+">Di atas Rp 15 juta</option>
+        </select>
+        <label class="sr-only" for="sort">Urutkan</label>
+        <select id="sort">
+          <option value="default">Urutan toko</option>
+          <option value="asc">Harga termurah</option>
+          <option value="desc">Harga termahal</option>
+        </select>
+      </div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <section class="block" id="layanan" aria-labelledby="layananTitle">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="layananTitle">Servis dan sparepart laptop</h2>
+        <p>Laptop bermasalah atau butuh komponen baru? Kami melayani servis hardware dan software, serta menyediakan berbagai sparepart laptop.</p>
+      </div>
+      <div class="svc-grid">
+        <div class="panel svc">
+          <h3>Servis hardware</h3>
+          <p>Perbaikan kerusakan fisik dan komponen laptop.</p>
+          <ul>
+            <li>Ganti layar, keyboard, dan baterai</li>
+            <li>Perbaikan engsel dan casing</li>
+            <li>Upgrade RAM dan SSD</li>
+            <li>Bersihkan kipas dan ganti thermal paste</li>
+          </ul>
+        </div>
+        <div class="panel svc">
+          <h3>Servis software</h3>
+          <p>Laptop lambat, error, atau terkena virus.</p>
+          <ul>
+            <li>Instal ulang Windows</li>
+            <li>Instal driver dan aplikasi</li>
+            <li>Bersihkan virus dan malware</li>
+            <li>Backup dan pemindahan data</li>
+          </ul>
+        </div>
+        <div class="panel svc">
+          <h3>Sparepart laptop</h3>
+          <p>Komponen pengganti untuk berbagai merek dan tipe.</p>
+          <ul>
+            <li>Baterai dan charger</li>
+            <li>Layar dan keyboard</li>
+            <li>RAM, SSD, dan hard disk</li>
+            <li>Kipas dan komponen lainnya</li>
+          </ul>
+        </div>
+      </div>
+      <p class="svc-cta">Sebutkan merek, tipe laptop, dan keluhanmu, lalu admin kami akan cek ketersediaan dan estimasi biayanya.
+        <a class="btn signal" href="https://wa.me/6281808090464?text=Halo%20Swadaya%20Notebook%20Store%2C%20saya%20mau%20tanya%20servis%20atau%20sparepart%20laptop." target="_blank" rel="noopener noreferrer">Tanya servis lewat WhatsApp</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="block" id="faq" aria-labelledby="faqTitle" style="padding-top:8px">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="faqTitle">Pertanyaan yang sering ditanyakan</h2>
+        <p>Belum menemukan jawabannya? Hubungi admin kami kapan saja selama jam buka.</p>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Jam berapa toko buka?</summary>
+          <p>Toko buka pukul 10.00 dan tutup paling lambat pukul 21.00.</p>
+        </details>
+        <details>
+          <summary>Bisa tanya stok dan harga sebelum datang?</summary>
+          <p>Bisa. Hubungi Admin 1 atau Admin 2 lewat telepon atau WhatsApp, atau kirim email ke dedycipunjur@gmail.com. Harga dan stok dapat berubah, jadi konfirmasi dulu sebelum datang.</p>
+        </details>
+        <details>
+          <summary>Bagaimana memilih laptop sesuai kebutuhan?</summary>
+          <p>Untuk gaming, pilih laptop dengan kartu grafis khusus dan layar 120Hz atau lebih. Untuk kerja dan kuliah, prosesor Core i3 atau Ryzen 3 dengan RAM 8GB sudah cukup, dan SSD membuat laptop terasa jauh lebih cepat. Untuk editing, utamakan RAM 16GB, kartu grafis khusus, dan layar dengan warna akurat. Masih bingung? Sebutkan budget dan kebutuhanmu ke admin, kami bantu pilihkan.</p>
+        </details>
+        <details>
+          <summary>Servis apa saja yang tersedia?</summary>
+          <p>Kami melayani servis hardware dan software laptop. Lihat daftar contohnya di bagian <a href="#layanan">Servis dan sparepart laptop</a>.</p>
+        </details>
+        <details>
+          <summary>Bagaimana kalau butuh sparepart tertentu?</summary>
+          <p>Kami menyediakan berbagai sparepart laptop. Sebutkan merek, tipe laptop, dan komponen yang dicari ke admin, lalu kami cek ketersediaannya.</p>
+        </details>
+        <details>
+          <summary>Bagaimana soal garansi dan cara pembayaran?</summary>
+          <p>Tanyakan langsung ke admin sebelum membeli agar mendapat info garansi dan metode pembayaran yang terbaru.</p>
+        </details>
+        <details>
+          <summary>Di mana lokasi toko?</summary>
+          <p>Buka <a href="https://maps.app.goo.gl/JW3Zf19A5umssGeo7" target="_blank" rel="noopener noreferrer">lokasi toko di Google Maps</a> untuk petunjuk arah.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="lokasi" aria-labelledby="lokasiTitle" style="padding-top:8px">
+    <div class="wrap two-col">
+      <div class="panel" id="lokasiPanel">
+        <h3 id="lokasiTitle">Datang langsung ke toko</h3>
+        <p>Coba keyboard dan layarnya, bandingkan beberapa laptop, dan tanya apa saja ke kami sebelum membeli.</p>
+        <p class="hours"><strong>Jam buka</strong><br>Pukul 10.00 sampai paling lambat 21.00</p>
+        <a class="btn signal" href="https://maps.app.goo.gl/JW3Zf19A5umssGeo7" target="_blank" rel="noopener noreferrer">Buka di Google Maps</a>
+      </div>
+      <div class="panel dark" id="kontak">
+        <h3>Hubungi kami</h3>
+        <p>Tanya stok, harga terbaru, atau minta rekomendasi laptop sesuai budget kamu.</p>
+        <a class="email-link" href="mailto:dedycipunjur@gmail.com">dedycipunjur@gmail.com</a>
+        <ul class="admins">
+          <li>
+            <span class="admin-name">Admin 1</span>
+            <a class="num" href="tel:+6281808090464">+62818-0809-0464</a>
+            <a class="btn btn-sm alt-light" href="https://wa.me/6281808090464" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </li>
+          <li>
+            <span class="admin-name">Admin 2</span>
+            <a class="num" href="tel:+628987370165">+62898-7370-165</a>
+            <a class="btn btn-sm alt-light" href="https://wa.me/628987370165" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </li>
+        </ul>
+        <div class="btn-row">
+          <a class="btn signal" href="mailto:dedycipunjur@gmail.com?subject=Tanya%20laptop%20di%20Swadaya%20Notebook%20Store">Kirim email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="formTitle" style="padding-top:8px">
+    <div class="wrap">
+      <div class="panel">
+        <h3 id="formTitle">Kirim pesan</h3>
+        <p>Isi form ini, lalu aplikasi email kamu akan terbuka dengan pesan yang sudah siap dikirim.</p>
+        <form class="contact" id="contactForm">
+          <label>Nama
+            <input type="text" id="cName" name="nama" autocomplete="name" required>
+          </label>
+          <label>Pesan
+            <textarea id="cMsg" name="pesan" placeholder="Contoh: Saya cari laptop untuk kuliah, budget sekitar 6 juta." required></textarea>
+          </label>
+          <div><button class="btn" type="submit">Buka aplikasi email</button></div>
+          <p class="form-note">Tidak ada aplikasi email? Tulis langsung ke dedycipunjur@gmail.com atau hubungi admin lewat telepon atau WhatsApp di atas.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 Swadaya Notebook Store</span>
+    <span>Harga dan stok dapat berubah, hubungi kami untuk info terbaru.</span>
+  </div>
+</footer>
+
+<div class="wa-fab">
+  <div class="wa-menu" id="fabMenu" role="group" aria-label="Pilih admin untuk chat WhatsApp">
+    <a href="https://wa.me/6281808090464" target="_blank" rel="noopener noreferrer">Admin 1<small>+62818-0809-0464</small></a>
+    <a href="https://wa.me/628987370165" target="_blank" rel="noopener noreferrer">Admin 2<small>+62898-7370-165</small></a>
+  </div>
+  <button class="wa-fab-btn" id="fabBtn" type="button" aria-expanded="false" aria-controls="fabMenu">
+    <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" fill="#fff"/></svg>
+    Chat admin
+  </button>
+</div>
+
+<dialog class="detail" id="detail" aria-labelledby="dName">
+  <button class="close-btn" id="closeBtn" type="button" aria-label="Tutup detail">&times;</button>
+  <div id="detailContent"></div>
+</dialog>
+
+<script>
+/* ============================================================
+   KATALOG LAPTOP
+   Ini data contoh. Ganti dengan laptop, spesifikasi, dan harga
+   yang sebenarnya di toko kamu. Cukup salin satu blok { ... }
+   untuk menambah laptop baru, atau hapus blok yang tidak perlu.
+
+   - price: angka rupiah, atau null untuk menampilkan "Tanya harga"
+   - tags : kebutuhan utama, pilih dari "gaming", "harian", "editing"
+   - needs: nilai kecocokan 1 sampai 5 untuk tiap kebutuhan
+   - foto : simpan foto di folder "foto" di samping index.html dengan
+            nama sesuai id, contoh foto/tuf-f15.jpg (atau isi field photo)
+   - kondisi dan garansi (opsional): tambahkan baris seperti
+            kondisi: "Baru", garansi: "1 tahun" di blok laptopnya.
+            Kalau diisi, otomatis tampil di kartu dan detail.
+   ============================================================ */
+const PRODUCTS = [
+  {
+    id: "tuf-f15", brand: "ASUS", name: "TUF Gaming F15", price: 11499000,
+    tags: ["gaming", "editing"],
+    needs: { gaming: 4, harian: 3, editing: 3 },
+    summary: "Laptop gaming tangguh dengan layar 144Hz. Cukup kuat juga untuk edit foto dan video ringan.",
+    specs: {
+      "Prosesor": "Intel Core i5-11400H",
+      "Kartu grafis": "NVIDIA GeForce RTX 3050 4GB",
+      "RAM": "16GB DDR4",
+      "Penyimpanan": "SSD 512GB NVMe",
+      "Layar": "15,6 inci Full HD, 144Hz",
+      "Sistem operasi": "Windows 11 Home"
+    }
+  },
+  {
+    id: "nitro-5", brand: "Acer", name: "Nitro 5 AN515", price: 15299000,
+    tags: ["gaming", "editing"],
+    needs: { gaming: 5, harian: 3, editing: 4 },
+    summary: "Performa tinggi untuk game berat dan render video. Pendinginnya besar, jadi stabil saat dipakai lama.",
+    specs: {
+      "Prosesor": "AMD Ryzen 7 5800H",
+      "Kartu grafis": "NVIDIA GeForce RTX 3060 6GB",
+      "RAM": "16GB DDR4",
+      "Penyimpanan": "SSD 512GB NVMe",
+      "Layar": "15,6 inci Full HD, 144Hz",
+      "Sistem operasi": "Windows 11 Home"
+    }
+  },
+  {
+    id: "loq-15", brand: "Lenovo", name: "LOQ 15", price: 12799000,
+    tags: ["gaming"],
+    needs: { gaming: 4, harian: 3, editing: 3 },
+    summary: "Gaming seimbang dengan harga bersahabat. Cocok untuk Valorant, Dota 2, dan game populer lainnya.",
+    specs: {
+      "Prosesor": "Intel Core i5-12450H",
+      "Kartu grafis": "NVIDIA GeForce RTX 3050 6GB",
+      "RAM": "16GB DDR5",
+      "Penyimpanan": "SSD 512GB NVMe",
+      "Layar": "15,6 inci Full HD, 144Hz",
+      "Sistem operasi": "Windows 11 Home"
+    }
+  },
+  {
+    id: "vivobook-pro-15-oled", brand: "ASUS", name: "Vivobook Pro 15 OLED", price: 14499000,
+    tags: ["editing", "gaming"],
+    needs: { gaming: 3, harian: 4, editing: 5 },
+    summary: "Layar OLED dengan warna sangat akurat, pilihan tepat untuk editor foto, video, dan desainer.",
+    specs: {
+      "Prosesor": "Intel Core i7-12650H",
+      "Kartu grafis": "NVIDIA GeForce RTX 3050 4GB",
+      "RAM": "16GB DDR4",
+      "Penyimpanan": "SSD 512GB NVMe",
+      "Layar": "15,6 inci OLED 2.8K",
+      "Sistem operasi": "Windows 11 Home"
+    }
+  },
+  {
+    id: "macbook-air-m1", brand: "Apple", name: "MacBook Air M1", price: 11199000,
+    tags: ["harian", "editing"],
+    needs: { gaming: 1, harian: 5, editing: 4 },
+    summary: "Ringan, awet baterai, dan sangat responsif. Enak untuk kerja, kuliah, dan edit video ringan.",
+    specs: {
+      "Prosesor": "Apple M1 (8-core CPU)",
+      "Kartu grafis": "Apple GPU 7-core",
+      "RAM": "8GB unified memory",
+      "Penyimpanan": "SSD 256GB",
+      "Layar": "13,3 inci Retina",
+      "Sistem operasi": "macOS"
+    }
+  },
+  {
+    id: "thinkpad-e14", brand: "Lenovo", name: "ThinkPad E14", price: 10599000,
+    tags: ["harian"],
+    needs: { gaming: 1, harian: 5, editing: 3 },
+    summary: "Laptop kerja yang kokoh dengan keyboard nyaman. Cocok untuk kantor dan pekerjaan dokumen seharian.",
+    specs: {
+      "Prosesor": "Intel Core i5-1235U",
+      "Kartu grafis": "Intel Iris Xe",
+      "RAM": "16GB DDR4",
+      "Penyimpanan": "SSD 512GB NVMe",
+      "Layar": "14 inci Full HD",
+      "Sistem operasi": "Windows 11 Home"
+    }
+  },
+  {
+    id: "aspire-5", brand: "Acer", name: "Aspire 5", price: 7499000,
+    tags: ["harian"],
+    needs: { gaming: 2, harian: 5, editing: 2 },
+    summary: "Pilihan serbaguna untuk kuliah dan kerja. Layar lega dan tenaga cukup untuk banyak tab sekaligus.",
+    specs: {
+      "Prosesor": "Intel Core i5-1235U",
+      "Kartu grafis": "Intel Iris Xe",
+      "RAM": "8GB DDR4",
+      "Penyimpanan": "SSD 512GB NVMe",
+      "Layar": "15,6 inci Full HD",
+      "Sistem operasi": "Windows 11 Home"
+    }
+  },
+  {
+    id: "vivobook-14", brand: "ASUS", name: "Vivobook 14", price: 6599000,
+    tags: ["harian"],
+    needs: { gaming: 2, harian: 5, editing: 2 },
+    summary: "Tipis, ringan, dan mudah dibawa. Pas untuk mahasiswa dan pekerja yang sering berpindah tempat.",
+    specs: {
+      "Prosesor": "AMD Ryzen 5 5500U",
+      "Kartu grafis": "AMD Radeon Graphics",
+      "RAM": "8GB DDR4",
+      "Penyimpanan": "SSD 512GB NVMe",
+      "Layar": "14 inci Full HD",
+      "Sistem operasi": "Windows 11 Home"
+    }
+  },
+  {
+    id: "ideapad-slim-3", brand: "Lenovo", name: "IdeaPad Slim 3", price: 5599000,
+    tags: ["harian"],
+    needs: { gaming: 1, harian: 4, editing: 2 },
+    summary: "Laptop hemat untuk tugas sekolah, browsing, dan Office. Cocok untuk kebutuhan dasar.",
+    specs: {
+      "Prosesor": "Intel Core i3-1215U",
+      "Kartu grafis": "Intel UHD Graphics",
+      "RAM": "8GB DDR4",
+      "Penyimpanan": "SSD 256GB NVMe",
+      "Layar": "15,6 inci Full HD",
+      "Sistem operasi": "Windows 11 Home"
+    }
+  },
+  {
+    id: "hp-14s", brand: "HP", name: "14s", price: 5099000,
+    tags: ["harian"],
+    needs: { gaming: 1, harian: 4, editing: 1 },
+    summary: "Pilihan termurah di katalog ini. Pas untuk pelajar yang butuh laptop ringan untuk belajar online.",
+    specs: {
+      "Prosesor": "AMD Ryzen 3 5300U",
+      "Kartu grafis": "AMD Radeon Graphics",
+      "RAM": "8GB DDR4",
+      "Penyimpanan": "SSD 256GB NVMe",
+      "Layar": "14 inci HD",
+      "Sistem operasi": "Windows 11 Home"
+    }
+  }
+];
+
+const EMAIL = "dedycipunjur@gmail.com";
+const NEED_META = {
+  gaming:  { label: "Gaming",  color: "#6B3BFF", desc: [
+    "Kurang cocok untuk game berat. Masih bisa untuk game ringan.",
+    "Cukup untuk game ringan sampai sedang dengan pengaturan grafis rendah.",
+    "Bisa untuk game populer dengan pengaturan menengah.",
+    "Lancar untuk kebanyakan game populer dengan grafis tinggi.",
+    "Sangat kuat, game berat bisa dimainkan dengan grafis tinggi."
+  ]},
+  harian:  { label: "Harian",  color: "#1F4FFF", desc: [
+    "Hanya untuk tugas sangat dasar.",
+    "Cukup untuk browsing dan dokumen sederhana.",
+    "Nyaman untuk sekolah, kuliah, dan Office.",
+    "Lancar untuk banyak tab dan aplikasi sekaligus.",
+    "Sangat nyaman untuk kerja dan kuliah seharian."
+  ]},
+  editing: { label: "Editing", color: "#E8541F", desc: [
+    "Belum cocok untuk edit video atau desain.",
+    "Hanya cukup untuk edit foto sederhana.",
+    "Bisa untuk edit foto dan video ringan.",
+    "Lancar untuk edit video Full HD dan desain grafis.",
+    "Sangat mumpuni untuk edit video, foto, dan desain profesional."
+  ]}
+};
+const VERDICT = ["Kurang cocok", "Kurang cocok", "Cukup cocok", "Cocok", "Sangat cocok"];
+const SCREEN_COLORS = { gaming: ["#1B1147", "#6B3BFF"], harian: ["#E3EAFF", "#9DB4FF"], editing: ["#1B2230", "#E8541F"] };
+
+const rupiah = n => n == null ? "Tanya harga" : "Rp " + new Intl.NumberFormat("id-ID").format(n);
+const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+
+function laptopSVG(p) {
+  const [a, b] = SCREEN_COLORS[p.tags[0]];
+  const gid = "g-" + p.id + "-" + Math.random().toString(36).slice(2, 6);
+  return `<svg viewBox="0 0 200 128" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs><linearGradient id="${gid}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${a}"/><stop offset="1" stop-color="${b}"/></linearGradient></defs>
+    <rect x="30" y="8" width="140" height="92" rx="7" fill="#0E1726"/>
+    <rect x="36" y="14" width="128" height="80" rx="3" fill="url(#${gid})"/>
+    <rect x="46" y="24" width="52" height="5" rx="2.5" fill="#fff" opacity=".7"/>
+    <rect x="46" y="35" width="82" height="4" rx="2" fill="#fff" opacity=".35"/>
+    <rect x="46" y="44" width="70" height="4" rx="2" fill="#fff" opacity=".35"/>
+    <path d="M12 102h176l-6 4a10 10 0 0 1-5 1.4H23a10 10 0 0 1-5-1.4z" fill="#C9D1DF"/>
+    <rect x="84" y="102" width="32" height="3" rx="1.5" fill="#A9B3C6"/>
+  </svg>`;
+}
+
+/* Foto produk: dibaca dari folder foto/ dengan nama sesuai id laptop,
+   misalnya foto/tuf-f15.jpg. Kalau file foto belum ada, otomatis
+   memakai ilustrasi laptop. Bisa juga diisi manual lewat field photo. */
+function artHTML(p) {
+  const src = p.photo || `foto/${p.id}.jpg`;
+  return `<img class="photo" src="${src}" alt="${p.brand} ${p.name}" loading="lazy" data-id="${p.id}">`;
+}
+document.addEventListener("error", e => {
+  const img = e.target;
+  if (img && img.tagName === "IMG" && img.classList.contains("photo")) {
+    const p = PRODUCTS.find(x => x.id === img.dataset.id);
+    if (p) img.outerHTML = laptopSVG(p);
+  }
+}, true);
+
+function tagsHTML(p) {
+  return p.tags.map(t => `<span class="tag ${t}">${cap(t)}</span>`).join("");
+}
+
+/* ---------- Katalog ---------- */
+const grid = document.getElementById("grid");
+const countEl = document.getElementById("count");
+const qEl = document.getElementById("q");
+const budgetEl = document.getElementById("budget");
+const sortEl = document.getElementById("sort");
+const BUDGETS = { "semua": [0, Infinity], "0-6": [0, 6e6], "6-10": [6e6, 10e6], "10-15": [10e6, 15e6], "15+": [15e6, Infinity] };
+let activeFilter = "semua";
+
+function getList() {
+  const q = qEl.value.trim().toLowerCase();
+  const [lo, hi] = BUDGETS[budgetEl.value];
+  let list = PRODUCTS.filter(p => {
+    if (activeFilter !== "semua" && !p.tags.includes(activeFilter)) return false;
+    if (q && !(p.brand + " " + p.name + " " + Object.values(p.specs).join(" ")).toLowerCase().includes(q)) return false;
+    if (budgetEl.value !== "semua" && (p.price == null || p.price < lo || p.price >= hi)) return false;
+    return true;
+  });
+  const dir = sortEl.value;
+  if (dir !== "default") {
+    list = [...list].sort((a, b) => {
+      if (a.price == null) return 1;
+      if (b.price == null) return -1;
+      return dir === "asc" ? a.price - b.price : b.price - a.price;
+    });
+  }
+  return list;
+}
+
+function renderGrid() {
+  const list = getList();
+  countEl.textContent = list.length ? `Menampilkan ${list.length} laptop` : "";
+  if (!list.length) {
+    grid.innerHTML = `<div class="empty">Tidak ada laptop yang cocok dengan pilihan ini. Coba ubah filter, atau hubungi admin untuk cek stok terbaru.<br><button class="chip" type="button" id="resetBtn">Hapus semua filter</button></div>`;
+    return;
+  }
+  grid.innerHTML = list.map(p => `
+    <button class="card" type="button" data-id="${p.id}" aria-label="Lihat detail ${p.brand} ${p.name}">
+      <span class="card-art">${artHTML(p)}</span>
+      <span class="card-body">
+        <span class="card-brand">${p.brand}${p.kondisi ? `<span class="cond">${p.kondisi}</span>` : ""}</span>
+        <span class="card-name">${p.name}</span>
+        <span class="card-spec">${p.specs["Prosesor"]}, ${p.specs["RAM"].split(" ")[0]} RAM, ${p.specs["Penyimpanan"].replace("SSD ", "").replace(" NVMe", "")}</span>
+        <span class="card-foot">
+          <span class="price">${rupiah(p.price)}</span>
+          <span class="tags">${tagsHTML(p)}</span>
+        </span>
+      </span>
+    </button>`).join("");
+}
+
+function setFilter(f) {
+  activeFilter = f;
+  document.querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", String(c.dataset.filter === f)));
+  document.querySelectorAll(".need-btn").forEach(b => b.classList.toggle("is-active", b.dataset.need === f));
+  renderGrid();
+}
+
+document.querySelectorAll(".chip").forEach(c => c.addEventListener("click", () => setFilter(c.dataset.filter)));
+
+/* ---------- Hero: layar laptop berganti sesuai kebutuhan ---------- */
+const captions = {
+  gaming: "Gaming: grafis tinggi dan layar 144Hz",
+  harian: "Harian: dokumen, kelas online, dan rapat",
+  editing: "Editing: timeline video dan warna akurat"
+};
+const screens = document.querySelectorAll(".hero-art .screen");
+const caption = document.getElementById("heroCaption");
+let heroNeed = "gaming";
+function showScreen(need) {
+  screens.forEach(s => s.classList.toggle("on", s.dataset.screen === need));
+  caption.textContent = captions[need];
+}
+showScreen(heroNeed);
+
+document.querySelectorAll(".need-btn").forEach(btn => {
+  const need = btn.dataset.need;
+  btn.addEventListener("mouseenter", () => showScreen(need));
+  btn.addEventListener("focus", () => showScreen(need));
+  btn.addEventListener("mouseleave", () => showScreen(heroNeed));
+  btn.addEventListener("blur", () => showScreen(heroNeed));
+  btn.addEventListener("click", () => {
+    heroNeed = need;
+    showScreen(need);
+    setFilter(need);
+    document.getElementById("katalog").scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+/* ---------- Detail laptop ---------- */
+const dlg = document.getElementById("detail");
+const content = document.getElementById("detailContent");
+let lastTrigger = null;
+
+function openDetail(id, trigger) {
+  const p = PRODUCTS.find(x => x.id === id);
+  if (!p) return;
+  lastTrigger = trigger || null;
+  const subject = encodeURIComponent(`Tanya ${p.brand} ${p.name}`);
+  const body = encodeURIComponent(`Halo Swadaya Notebook Store, saya tertarik dengan ${p.brand} ${p.name}. Apakah stoknya masih tersedia?`);
+
+  const specRows = Object.entries({ ...p.specs, ...(p.kondisi ? { "Kondisi": p.kondisi } : {}), ...(p.garansi ? { "Garansi": p.garansi } : {}) }).map(([k, v]) => `<tr><th scope="row">${k}</th><td>${v}</td></tr>`).join("");
+  const needRows = ["gaming", "harian", "editing"].map(n => {
+    const s = p.needs[n];
+    const meter = [1, 2, 3, 4, 5].map(i => `<b class="${i <= s ? "fill" : ""}"></b>`).join("");
+    return `<div class="need-row" data-need="${n}">
+      <div class="label"><i></i>${NEED_META[n].label}</div>
+      <div>
+        <div class="meter" role="img" aria-label="${NEED_META[n].label}: ${s} dari 5">${meter}</div>
+        <div class="verdict">${VERDICT[s - 1]}</div>
+        <div class="desc">${NEED_META[n].desc[s - 1]}</div>
+      </div>
+    </div>`;
+  }).join("");
+
+  content.innerHTML = `
+    <div class="detail-top">
+      <div class="detail-art">${artHTML(p)}</div>
+      <div>
+        <p class="brand-line">${p.brand}</p>
+        <h3 id="dName">${p.name}</h3>
+        <div class="tags">${tagsHTML(p)}</div>
+        <p class="price-big">${rupiah(p.price)}</p>
+        <p class="summary">${p.summary}</p>
+      </div>
+    </div>
+    <div class="detail-section">
+      <h4>Cocok untuk kebutuhan apa?</h4>
+      <div class="needs">${needRows}</div>
+    </div>
+    <div class="detail-section">
+      <h4>Spesifikasi</h4>
+      <table class="specs"><tbody>${specRows}</tbody></table>
+    </div>
+    <div class="detail-actions">
+      <a class="btn signal" href="mailto:${EMAIL}?subject=${subject}&body=${body}">Tanya laptop ini</a>
+      <a class="btn alt" href="tel:+6281808090464">Telepon toko</a>
+      <a class="btn alt" href="https://maps.app.goo.gl/JW3Zf19A5umssGeo7" target="_blank" rel="noopener noreferrer">Lihat lokasi toko</a>
+    </div>`;
+  dlg.showModal();
+  dlg.scrollTop = 0;
+}
+
+grid.addEventListener("click", e => {
+  if (e.target.closest("#resetBtn")) { resetFilters(); return; }
+  const card = e.target.closest(".card");
+  if (card) openDetail(card.dataset.id, card);
+});
+document.getElementById("closeBtn").addEventListener("click", () => dlg.close());
+dlg.addEventListener("click", e => { if (e.target === dlg) dlg.close(); });
+dlg.addEventListener("close", () => { if (lastTrigger) lastTrigger.focus(); });
+
+/* ---------- Form kontak (membuka aplikasi email) ---------- */
+document.getElementById("contactForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const name = document.getElementById("cName").value.trim();
+  const msg = document.getElementById("cMsg").value.trim();
+  const subject = encodeURIComponent("Pesan dari " + name + " untuk Swadaya Notebook Store");
+  const body = encodeURIComponent(msg + "\n\nSalam,\n" + name);
+  window.location.href = `mailto:${EMAIL}?subject=${subject}&body=${body}`;
+});
+
+/* ---------- Pencarian, budget, urutan ---------- */
+function resetFilters() {
+  qEl.value = "";
+  budgetEl.value = "semua";
+  sortEl.value = "default";
+  setFilter("semua");
+}
+qEl.addEventListener("input", renderGrid);
+budgetEl.addEventListener("change", renderGrid);
+sortEl.addEventListener("change", renderGrid);
+
+/* ---------- Tombol WhatsApp melayang ---------- */
+const fabBtn = document.getElementById("fabBtn");
+const fabMenu = document.getElementById("fabMenu");
+function closeFab() { fabMenu.classList.remove("open"); fabBtn.setAttribute("aria-expanded", "false"); }
+fabBtn.addEventListener("click", () => {
+  const open = fabMenu.classList.toggle("open");
+  fabBtn.setAttribute("aria-expanded", String(open));
+});
+document.addEventListener("click", e => { if (!e.target.closest(".wa-fab")) closeFab(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeFab(); });
+
+renderGrid();
+</script>
+</body>
+</html>
